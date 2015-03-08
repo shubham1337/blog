@@ -2,12 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Shubham Sharma</title>
-    <description>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+    <description>A Personal Blog for sharing Ideas with the web.
 </description>
-    <link>http://yourdomain.com/</link>
-    <atom:link href="http://yourdomain.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 01 Mar 2015 22:20:05 +0530</pubDate>
-    <lastBuildDate>Sun, 01 Mar 2015 22:20:05 +0530</lastBuildDate>
+    <link>http://shubhamsharma.in/</link>
+    <atom:link href="http://shubhamsharma.in/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sun, 08 Mar 2015 13:48:55 +0530</pubDate>
+    <lastBuildDate>Sun, 08 Mar 2015 13:48:55 +0530</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
@@ -28,8 +28,8 @@
 
 </description>
         <pubDate>Thu, 12 Feb 2015 23:46:28 +0530</pubDate>
-        <link>http://yourdomain.com/jekyll/update/2015/02/12/welcome-to-jekyll.html</link>
-        <guid isPermaLink="true">http://yourdomain.com/jekyll/update/2015/02/12/welcome-to-jekyll.html</guid>
+        <link>http://shubhamsharma.in/jekyll/update/2015/02/12/welcome-to-jekyll.html</link>
+        <guid isPermaLink="true">http://shubhamsharma.in/jekyll/update/2015/02/12/welcome-to-jekyll.html</guid>
         
         
         <category>jekyll</category>
