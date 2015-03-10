@@ -1,0 +1,53 @@
+<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='489.00000000000006' height='249.00000000000003' viewBox='0 0 97.80000000000001 49.800000000000004'>
+	<defs>
+		<path id='s' fill='#ffffff' d='M0,0l8 4l-8,4z'/>
+	</defs>
+	<g id='b'>
+	<use x='-8' y='-4' transform='matrix(-1 0 0 1 0 0)' fill-opacity='0.1' xlink:href='#s' />
+	<use x='0' y='0.15' fill-opacity='0.15' xlink:href='#s' />
+	<use x='-8' y='4.300000000000001' transform='matrix(-1 0 0 1 0 0)' fill-opacity='0.15' xlink:href='#s' />
+	<use x='0' y='8.450000000000001' fill-opacity='0.15' xlink:href='#s' />
+	<use x='-8' y='12.600000000000001' transform='matrix(-1 0 0 1 0 0)' fill-opacity='0.2' xlink:href='#s' />
+	<use x='0' y='16.75' fill-opacity='0.1' xlink:href='#s' />
+	<use x='-8' y='20.9' transform='matrix(-1 0 0 1 0 0)' fill-opacity='0.1' xlink:href='#s' />
+	<use x='8.15' y='-4' fill-opacity='0.15' xlink:href='#s' />
+	<use x='-16.150000000000002' y='0.15' transform='matrix(-1 0 0 1 0 0)' fill-opacity='0.2' xlink:href='#s' />
+	<use x='8.15' y='4.300000000000001' fill-opacity='0.15' xlink:href='#s' />
+	<use x='-16.150000000000002' y='8.450000000000001' transform='matrix(-1 0 0 1 0 0)' fill-opacity='0.1' xlink:href='#s' />
+	<use x='8.15' y='12.600000000000001' fill-opacity='0.05' xlink:href='#s' />
+	<use x='-16.150000000000002' y='16.75' transform='matrix(-1 0 0 1 0 0)' fill-opacity='0.1' xlink:href='#s' />
+	<use x='8.15' y='20.9' fill-opacity='0.15' xlink:href='#s' />
+	<use x='-24.300000000000004' y='-4' transform='matrix(-1 0 0 1 0 0)' fill-opacity='0.1' xlink:href='#s' />
+	<use x='16.3' y='0.15' fill-opacity='0.1' xlink:href='#s' />
+	<use x='-24.300000000000004' y='4.300000000000001' transform='matrix(-1 0 0 1 0 0)' fill-opacity='0.15' xlink:href='#s' />
+	<use x='16.3' y='8.450000000000001' fill-opacity='0.1' xlink:href='#s' />
+	<use x='-24.300000000000004' y='12.600000000000001' transform='matrix(-1 0 0 1 0 0)' fill-opacity='0.05' xlink:href='#s' />	
+	<use x='16.3' y='16.75' fill-opacity='0.1' xlink:href='#s' />
+	<use x='-24.300000000000004' y='20.9' transform='matrix(-1 0 0 1 0 0)' fill-opacity='0.1' xlink:href='#s' />
+	<use x='24.450000000000003' y='-4' fill-opacity='0.1' xlink:href='#s' />
+	<use x='-32.45' y='0.15' transform='matrix(-1 0 0 1 0 0)' fill-opacity='0.1' xlink:href='#s' />
+	<use x='24.450000000000003' y='4.300000000000001' fill-opacity='0.05' xlink:href='#s' />
+	<use x='-32.45' y='8.450000000000001' transform='matrix(-1 0 0 1 0 0)' fill-opacity='0.15' xlink:href='#s' />
+	<use x='24.450000000000003' y='12.600000000000001' fill-opacity='0.15' xlink:href='#s' />
+	<use x='-32.45' y='16.75' transform='matrix(-1 0 0 1 0 0)' fill-opacity='0.05' xlink:href='#s' />
+	<use x='24.450000000000003' y='20.9' fill-opacity='0.1' xlink:href='#s' />
+	<use x='-40.6' y='-4' transform='matrix(-1 0 0 1 0 0)' fill-opacity='0.15' xlink:href='#s' />	
+	<use x='32.6' y='0.15' fill-opacity='0.2' xlink:href='#s' />
+	<use x='-40.6' y='4.300000000000001' transform='matrix(-1 0 0 1 0 0)' fill-opacity='0.05' xlink:href='#s' />
+	<use x='32.6' y='8.450000000000001' fill-opacity='0.1' xlink:href='#s' />
+	<use x='-40.6' y='12.600000000000001' transform='matrix(-1 0 0 1 0 0)' fill-opacity='0.15' xlink:href='#s' />
+	<use x='32.6' y='16.75' fill-opacity='0.05' xlink:href='#s' />
+	<use x='-40.6' y='20.9' transform='matrix(-1 0 0 1 0 0)' fill-opacity='0.15' xlink:href='#s' />
+	<use x='40.75' y='-4' fill-opacity='0.1' xlink:href='#s' />
+	<use x='-48.75000000000001' y='0.15' transform='matrix(-1 0 0 1 0 0)' fill-opacity='0.1' xlink:href='#s' />	
+	<use x='40.75' y='4.300000000000001' fill-opacity='0.2' xlink:href='#s' />
+	<use x='-48.75000000000001' y='8.450000000000001' transform='matrix(-1 0 0 1 0 0)' fill-opacity='0.1' xlink:href='#s' />	
+	<use x='40.75' y='12.600000000000001' fill-opacity='0.15' xlink:href='#s' />
+	<use x='-48.75000000000001' y='16.75' transform='matrix(-1 0 0 1 0 0)' fill-opacity='0.1' xlink:href='#s' />
+	<use x='40.75' y='20.9' fill-opacity='0.1' xlink:href='#s' />
+	</g>
+	<use x='-48.75000000000001' y='24.900000000000002' transform='matrix(-1 0 0 1 0 0)' xlink:href='#b' />
+	<use x='-97.65' y='-16.6' transform='matrix(-1 0 0 -1 0 0)' xlink:href='#b' />
+	<use x='48.900000000000006' y='-33.2' transform='matrix(1 0 0 -1 0 0)' xlink:href='#b' />
+	<use x='48.900000000000006' y='-58.10000000000001' transform='matrix(1 0 0 -1 0 0)' xlink:href='#b' />
+</svg>

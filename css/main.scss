@@ -17,7 +17,7 @@ $spacing-unit:     30px;
 $text-color:       #111;
 $background-color: #fdfdfd;
 /*$brand-color:      #2a7ae2;*/
-$brand-color:      #0E83CD;
+$brand-color:      #7F08BF;
 /*#36AEE7*/
 
 $grey-color:       #828282;
@@ -25,10 +25,10 @@ $grey-color-light: lighten($grey-color, 40%);
 $grey-color-dark:  darken($grey-color, 25%);
 
 // Width of the content area
-$content-width:    800px;
+$content-width:    1920px;
 
 $on-palm:          600px;
-$on-laptop:        800px;
+$on-laptop:        1920px;
 
 $header-height:    56px;
 
@@ -52,5 +52,6 @@ $header-height:    56px;
 @import
         "base",
         "layout",
-        "syntax-highlighting"
+        "syntax-highlighting",
+        "custom"
 ;

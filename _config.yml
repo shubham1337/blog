@@ -1,8 +1,8 @@
 # Site settings
 title: Shubham Sharma
-email: shubham_sharma@outlook.com
+email: shubham@shubhamsharma.in
 description: > # this means to ignore newlines until "baseurl:"
-    A Personal Blog for sharing Ideas with the web.
+    A Personal Blog for sharing thoughts with the web.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://shubhamsharma.in" # the base hostname & protocol for your site
 twitter_username: shubh1337
