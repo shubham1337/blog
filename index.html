@@ -5,9 +5,11 @@ layout: default
 <section class="home">
 
     <section class="banner" role="banner">
-        <h1 class="banner-slogan">Simply Smart</h1>
-        <br />
-        <a href="{{ "/blog" | prepend: site.baseurl }}" class="button">Read the blog</a>
+        <div class="banner-content-wrapper">
+            <h1 class="banner-slogan">Simply Smart</h1>
+            <br />
+            <a href="{{ "/blog" | prepend: site.baseurl }}" class="button">Read the blog</a>
+        </div>
     </section>
 
     <section class="portfolio-section">
@@ -17,12 +19,14 @@ layout: default
     </section>
 
     <section class="blogposts-section">
-        <div class="cards-group">
-            <div class="card">
-            </div>
-            <div class="card">
-            </div>
-            <div class="card">
+        <div class="cards-wrapper">
+            <div class="cards-group">
+                <div class="card">
+                </div>
+                <div class="card">
+                </div>
+                <div class="card">
+                </div>
             </div>
         </div>
     </section>

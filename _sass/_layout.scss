@@ -9,6 +9,8 @@
     position: fixed;
     right: 0;
     top: 0;
+
+    z-index: 10;
 }
 
 .site-title {
@@ -34,14 +36,56 @@
     }
 
     .page-link {
+        box-sizing: border-box;
         color: $background-color;
+        display: inline-block;
         line-height: $base-line-height;
-        margin: 20px;
+        margin: 0 10px;
+        outline: medium none;
+        padding: 0.3em 15px;
+        position: relative;
+        text-decoration: none;
+        text-shadow: 0 0 1px rgba(255, 255, 255, 0.3);
 
         // Gaps between nav items, but not on the first one
-        &:first-child {
-            margin-right: 20px;
+        /*&:first-child {
+            margin-right: 10px;
+        }*/
+
+        //Fancy Navigation Links animation
+        &::before {
+            box-sizing: border-box;
+            position: absolute; 
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 1px;
+            background: $background-color;
+            content: '';
+            transition: top 0.3s;
         }
+
+        &::after {
+            box-sizing: border-box;
+            position: absolute; 
+            top: 0;
+            left: 0;
+            width: 1px;
+            height: 1px;
+            background: $background-color;
+            content: '';
+            transition: height 0.3s;
+        }
+
+        &:hover::before {
+            top: 100%;
+            opacity: 1;
+        }
+
+        &:hover::after {
+            height: 100%;
+        }
+
     }
 
     @include media-query($on-palm) {
@@ -85,6 +129,10 @@
         .page-link {
             display: block;
             padding: 5px 10px;
+            color: $darker-brand-color;
+            &::after, &::before {
+                background: $darker-brand-color;
+            }
         }
     }
 }
