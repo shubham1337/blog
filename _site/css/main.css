@@ -173,9 +173,10 @@ pre {
     display: none; }
   .site-nav .page-link {
     color: #fdfdfd;
-    line-height: 1.5; }
-    .site-nav .page-link:not(:first-child) {
-      margin-left: 20px; }
+    line-height: 1.5;
+    margin: 20px; }
+    .site-nav .page-link:first-child {
+      margin-right: 20px; }
   @media screen and (max-width: 600px) {
     .site-nav {
       position: absolute;
@@ -458,8 +459,11 @@ pre {
   height: 500px; }
 
 .banner {
-  background-color: #7F08BF;
-  background-image: url("../images/banner.svg"); }
+  background-color: #9D4AD4;
+  background-image: url("../images/banner.svg");
+  box-sizing: border-box;
+  padding: 9em 0;
+  text-align: center; }
 
 .skills-section,
 .blogposts-section,
@@ -487,3 +491,26 @@ pre {
   height: 300px;
   margin: 0 5%;
   width: 23%; }
+
+.banner-slogan {
+  font-size: 72px;
+  color: #fdfdfd; }
+
+button, .button {
+  background: transparent;
+  border: 2px solid #fdfdfd;
+  color: #fdfdfd;
+  cursor: pointer;
+  font-size: 12px;
+  padding: 1.5em;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: background 0.5s ease, color 0.5s ease; }
+  button, button:visited, .button, .button:visited {
+    color: #fdfdfd;
+    text-decoration: none; }
+  button:hover, .button:hover {
+    background: #fdfdfd;
+    color: #7F08BF;
+    text-decoration: none; }

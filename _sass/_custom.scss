@@ -3,8 +3,12 @@
 }
 
 .banner {
-    background-color: $darker-brand-color;
+    background-color: $dark-brand-color;
     background-image: url('../images/banner.svg');
+    box-sizing: border-box;
+
+    padding: 9em 0;
+    text-align: center;
 }
 
 .skills-section,
@@ -33,4 +37,34 @@
     height: 300px;
     margin: 0 5%;
     width: 23%;
+}
+
+.banner-slogan {
+    font-size: 72px; 
+    color: $background-color;
+}
+
+button, .button {
+    background: transparent; 
+    border: 2px solid $background-color;
+    color: $background-color;
+    cursor: pointer;
+    font-size: 12px;
+    padding: 1.5em;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: background 0.5s ease, color 0.5s ease;
+
+    &,
+    &:visited {
+        color: $background-color;
+        text-decoration: none;
+    }
+
+    &:hover {
+        background: $background-color;
+        color: $darker-brand-color;
+        text-decoration: none;
+    }
 }
