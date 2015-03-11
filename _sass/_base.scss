@@ -22,7 +22,7 @@ body {
     background-color: $background-color;
     -webkit-text-size-adjust: 100%;
 
-    /*padding-top: $header-height;*/
+    padding-top: $header-height;
 }
 
 
@@ -91,11 +91,11 @@ h1, h2, h3, h4, h5, h6 {
  * Links
  */
 a {
-    color: $brand-color;
+    color: $darker-brand-color;
     text-decoration: none;
 
     &:visited {
-        color: darken($brand-color, 15%);
+        color: darken($dark-brand-color, 15%);
     }
 
     &:hover {

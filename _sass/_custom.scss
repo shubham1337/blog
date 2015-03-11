@@ -1,10 +1,36 @@
+.home > section {
+    height: 500px;  
+}
 
 .banner {
-    height: 300px;
-    background-color: #9d4ad4;
+    background-color: $darker-brand-color;
     background-image: url('../images/banner.svg');
 }
-.sub-banner {
-    height: 300px; 
-    background-color: #cf6a4c;
+
+.skills-section,
+.blogposts-section,
+.portfolio-section {
+    display: table;
+    width: 100%;
+}
+.portfolio-section {
+    background-color: $background-color;
+}
+.skills-section {
+    background-color: $brand-color;
+}
+.blogposts-section {
+    background-color: $background-color;
+}
+.cards-group {
+    display: table-cell;
+    vertical-align: middle;
+}
+.card {
+    border: solid 1px $dark-brand-color;
+    box-shadow: 3px 3px 0 0 $dark-brand-color;
+    float: left;
+    height: 300px;
+    margin: 0 5%;
+    width: 23%;
 }
