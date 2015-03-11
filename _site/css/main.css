@@ -533,18 +533,45 @@ pre {
 button, .button {
   background: transparent;
   border: 2px solid #fdfdfd;
+  box-sizing: border-box;
   color: #fdfdfd;
   cursor: pointer;
+  display: inline-block;
   font-size: 12px;
-  padding: 1.5em;
   letter-spacing: 2px;
+  outline: medium none;
+  overflow: hidden;
+  padding: 1.5em;
+  position: relative;
   text-transform: uppercase;
   text-decoration: none;
-  transition: background 0.5s ease, color 0.5s ease; }
+  transition: all 0.3s ease 0s;
+  z-index: 1; }
   button, button:visited, .button, .button:visited {
     color: #fdfdfd;
     text-decoration: none; }
   button:hover, .button:hover {
-    background: #fdfdfd;
     color: #7F08BF;
     text-decoration: none; }
+  button::after, .button::after {
+    background: none repeat scroll 0 0 #fff;
+    box-sizing: border-box;
+    content: '';
+    height: 103%;
+    left: 50%;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    transition: all 0.3s ease 0s;
+    width: 0;
+    z-index: -1; }
+  button:hover::after, .button:hover::after {
+    opacity: 1;
+    width: 90%; }
+  button:active::after, .button:active::after {
+    width: 101%; }
+  button::before, .button::before {
+    box-sizing: border-box;
+    position: relative;
+    text-transform: none; }
