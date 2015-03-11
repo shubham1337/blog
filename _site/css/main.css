@@ -498,9 +498,14 @@ pre {
 .banner {
   background-color: #9D4AD4;
   background-image: url("../images/banner.svg");
+  background-position: 0 0;
   box-sizing: border-box;
-  padding: 9em 0;
+  overflow: hidden;
   text-align: center; }
+
+.banner-content-wrapper {
+  position: relative;
+  top: 120px; }
 
 .home > section:nth-child(2) {
   background-color: #fdfdfd; }

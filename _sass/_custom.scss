@@ -5,10 +5,17 @@
 .banner {
     background-color: $dark-brand-color;
     background-image: url('../images/banner.svg');
-    box-sizing: border-box;
 
-    padding: 9em 0;
+    //for Paralax Animation
+    background-position: 0 0;
+
+    box-sizing: border-box;
+    overflow: hidden;
     text-align: center;
+}
+.banner-content-wrapper {
+    position: relative; 
+    top: 120px;
 }
 
 .home > section:nth-child(2) {
