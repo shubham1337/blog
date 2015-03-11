@@ -11,20 +11,19 @@
     text-align: center;
 }
 
-.skills-section,
-.blogposts-section,
-.portfolio-section {
-    display: table;
-    width: 100%;
-}
-.portfolio-section {
+.home > section:nth-child(2) {
     background-color: $background-color;
 }
-.skills-section {
+.home > section:nth-child(3) {
     background-color: $brand-color;
 }
-.blogposts-section {
+.home > section:nth-child(4) {
     background-color: $background-color;
+}
+
+.cards-wrapper {
+    display: table;
+    width: 100%;
 }
 .cards-group {
     display: table-cell;
