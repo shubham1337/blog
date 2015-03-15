@@ -18,14 +18,13 @@
     top: 120px;
 }
 
-.home > section:nth-child(2) {
+.home > section:nth-child(even) {
     background-color: $background-color;
+    color: $dark-brand-color;
 }
-.home > section:nth-child(3) {
+.home > section:nth-child(odd):not(:first-child) {
     background-color: $brand-color;
-}
-.home > section:nth-child(4) {
-    background-color: $background-color;
+    color: $background-color;
 }
 
 .cards-wrapper {
@@ -37,8 +36,7 @@
     vertical-align: middle;
 }
 .card {
-    border: solid 1px $dark-brand-color;
-    box-shadow: 3px 3px 0 0 $dark-brand-color;
+    background-color: $background-color;
     float: left;
     height: 300px;
     margin: 0 5%;
@@ -107,5 +105,63 @@ button, .button {
         position: relative;
         text-transform: none;
     }
-    
+
+}
+
+.parallelogram {
+    display: inline-block;
+    position: relative; 
+    width: 33%;
+
+    .triangle {
+        width: 49%;
+    }
+
+    .triangle:first-child {
+        transition: left 0.5s;
+        transform: rotate(0deg); 
+
+        left: 12.5%;
+        position: relative;
+    }
+    .triangle:last-child {
+        transition: right 0.5s;
+        transform: rotate(180deg); 
+
+        position: relative;
+        right: 12.5%;
+    }
+
+    &:hover .triangle:first-child {
+        left: 0; 
+    }
+    &:hover .triangle:last-child {
+        right: 0; 
+    }
+}
+
+.section-heading-wrapper {
+    text-align: center; 
+}
+.section-heading {
+    font-size: 48px; 
+
+    &::before {
+        content: "<<<";
+        position: relative;
+        right: 20px;
+        transition: right 0.3s;
+    }
+    &::after {
+        content: ">>>";
+        position: relative;
+        left: 20px;
+        transition: left 0.3s;
+    }
+    &:hover::after {
+        left: 120px;
+    }
+    &:hover::before {
+        right: 120px;
+    }
 }

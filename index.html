@@ -6,19 +6,39 @@ layout: default
 
     <section class="banner" role="banner">
         <div class="banner-content-wrapper">
-            <h1 class="banner-slogan">Simply Smart</h1>
+            <h1 class="banner-slogan">{{ site.slogan }}</h1>
             <br />
             <a href="{{ "/blog" | prepend: site.baseurl }}" class="button">Read the blog</a>
         </div>
     </section>
 
     <section class="portfolio-section">
-    </section>
-
-    <section class="skills-section">
+        <div class="section-heading-wrapper">
+            <h1 class="section-heading">Latest Projects</h1>
+        </div>
+        <br />
+        <br />
+        <br />
+        <div class="parallelogram">
+            <img class="triangle" src="images/colored_triangle.svg" />
+            <img class="triangle" src="images/colored_triangle.svg" />
+        </div>
+        <div class="parallelogram">
+            <img class="triangle" src="images/colored_triangle.svg" />
+            <img class="triangle" src="images/colored_triangle.svg" />
+        </div>
+        <div class="parallelogram">
+            <img class="triangle" src="images/colored_triangle.svg" />
+            <img class="triangle" src="images/colored_triangle.svg" />
+        </div>
     </section>
 
     <section class="blogposts-section">
+        <div class="section-heading-wrapper">
+            <h1 class="section-heading">Blog Posts</h1>
+        </div>
+        <br />
+        <br />
         <div class="cards-wrapper">
             <div class="cards-group">
                 <div class="card">
@@ -30,5 +50,11 @@ layout: default
             </div>
         </div>
     </section>
+
+    <!--<section class="skills-section">
+        <div class="section-heading-wrapper">
+            <h1 class="section-heading">Skills</h1>
+        </div>
+    </section>-->
 
 </section>

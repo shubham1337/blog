@@ -182,10 +182,7 @@ pre {
     padding: 0.3em 15px;
     position: relative;
     text-decoration: none;
-    text-shadow: 0 0 1px rgba(255, 255, 255, 0.3);
-    /*&:first-child {
-        margin-right: 10px;
-    }*/ }
+    text-shadow: 0 0 1px rgba(255, 255, 255, 0.3); }
     .site-nav .page-link::before {
       box-sizing: border-box;
       position: absolute;
@@ -507,14 +504,13 @@ pre {
   position: relative;
   top: 120px; }
 
-.home > section:nth-child(2) {
-  background-color: #fdfdfd; }
+.home > section:nth-child(even) {
+  background-color: #fdfdfd;
+  color: #9D4AD4; }
 
-.home > section:nth-child(3) {
-  background-color: #BF78FA; }
-
-.home > section:nth-child(4) {
-  background-color: #fdfdfd; }
+.home > section:nth-child(odd):not(:first-child) {
+  background-color: #BF78FA;
+  color: #fdfdfd; }
 
 .cards-wrapper {
   display: table;
@@ -525,8 +521,7 @@ pre {
   vertical-align: middle; }
 
 .card {
-  border: solid 1px #9D4AD4;
-  box-shadow: 3px 3px 0 0 #9D4AD4;
+  background-color: #fdfdfd;
   float: left;
   height: 300px;
   margin: 0 5%;
@@ -581,3 +576,44 @@ button, .button {
     box-sizing: border-box;
     position: relative;
     text-transform: none; }
+
+.parallelogram {
+  display: inline-block;
+  position: relative;
+  width: 33%; }
+  .parallelogram .triangle {
+    width: 49%; }
+  .parallelogram .triangle:first-child {
+    transition: left 0.5s;
+    transform: rotate(0deg);
+    left: 12.5%;
+    position: relative; }
+  .parallelogram .triangle:last-child {
+    transition: right 0.5s;
+    transform: rotate(180deg);
+    position: relative;
+    right: 12.5%; }
+  .parallelogram:hover .triangle:first-child {
+    left: 0; }
+  .parallelogram:hover .triangle:last-child {
+    right: 0; }
+
+.section-heading-wrapper {
+  text-align: center; }
+
+.section-heading {
+  font-size: 48px; }
+  .section-heading::before {
+    content: "<<<";
+    position: relative;
+    right: 20px;
+    transition: right 0.3s; }
+  .section-heading::after {
+    content: ">>>";
+    position: relative;
+    left: 20px;
+    transition: left 0.3s; }
+  .section-heading:hover::after {
+    left: 120px; }
+  .section-heading:hover::before {
+    right: 120px; }

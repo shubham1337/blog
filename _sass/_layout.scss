@@ -47,11 +47,6 @@
         text-decoration: none;
         text-shadow: 0 0 1px rgba(255, 255, 255, 0.3);
 
-        // Gaps between nav items, but not on the first one
-        /*&:first-child {
-            margin-right: 10px;
-        }*/
-
         //Fancy Navigation Links animation
         &::before {
             box-sizing: border-box;
@@ -85,7 +80,6 @@
         &:hover::after {
             height: 100%;
         }
-
     }
 
     @include media-query($on-palm) {
