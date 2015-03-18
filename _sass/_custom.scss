@@ -1,5 +1,5 @@
 .home > section {
-    height: 500px;  
+    min-height: 500px;  
 }
 
 .banner {
@@ -159,9 +159,66 @@ button, .button {
         transition: left 0.3s;
     }
     &:hover::after {
-        left: 120px;
+        left: 70px;
     }
     &:hover::before {
-        right: 120px;
+        right: 70px;
     }
+
+    &:active::after {
+        left: 0px;
+    }
+    &:active::before {
+        right: 0px;
+    }
+}
+
+.projects {
+    text-align: center;
+
+    > div {
+        margin: 2% 5%;
+    } 
+}
+
+.anti-hexagon {
+    background-image: url('/images/mookit_1.jpg');
+    background-size: cover;
+    background-position: center;
+
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+    $width-of-triangle: 100px;
+    $no-of-triangles: 4;
+    $width: $no-of-triangles * $width-of-triangle;
+    width: $width;
+    @extend %clearfix;
+    z-index: 1;
+
+
+    .base-triangle-box {
+        @extend %clearfix;
+    }
+
+    .triangle, .upside-triangle {
+        float: left;
+        width: $width-of-triangle;
+    } 
+
+    .hide {
+        visibility: hidden; 
+    }
+
+    .stacked-triangle-box {
+        bottom: 0;
+        left: -($width-of-triangle/2);
+        position: absolute; 
+        right: -($width-of-triangle/2);
+        top: 0;
+    }
+}
+
+.upside-triangle {
+    transform: rotate(180deg); 
 }

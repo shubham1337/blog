@@ -129,7 +129,7 @@ pre {
 /**
  * Clearfix
  */
-.wrapper:after, .footer-col-wrapper:after {
+.wrapper:after, .footer-col-wrapper:after, .anti-hexagon:after, .anti-hexagon .base-triangle-box:after {
   content: "";
   display: table;
   clear: both; }
@@ -490,7 +490,7 @@ pre {
     color: #099; }
 
 .home > section {
-  height: 500px; }
+  min-height: 500px; }
 
 .banner {
   background-color: #9D4AD4;
@@ -614,6 +614,39 @@ button, .button {
     left: 20px;
     transition: left 0.3s; }
   .section-heading:hover::after {
-    left: 120px; }
+    left: 70px; }
   .section-heading:hover::before {
-    right: 120px; }
+    right: 70px; }
+  .section-heading:active::after {
+    left: 0px; }
+  .section-heading:active::before {
+    right: 0px; }
+
+.projects {
+  text-align: center; }
+  .projects > div {
+    margin: 2% 5%; }
+
+.anti-hexagon {
+  background-image: url("/images/mookit_1.jpg");
+  background-size: cover;
+  background-position: center;
+  display: inline-block;
+  overflow: hidden;
+  position: relative;
+  width: 400px;
+  z-index: 1; }
+  .anti-hexagon .triangle, .anti-hexagon .upside-triangle {
+    float: left;
+    width: 100px; }
+  .anti-hexagon .hide {
+    visibility: hidden; }
+  .anti-hexagon .stacked-triangle-box {
+    bottom: 0;
+    left: -50px;
+    position: absolute;
+    right: -50px;
+    top: 0; }
+
+.upside-triangle {
+  transform: rotate(180deg); }
