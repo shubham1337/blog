@@ -29,18 +29,78 @@
 
 .cards-wrapper {
     display: table;
-    width: 100%;
+    margin: 0 auto;
+    width: 80%;
 }
 .cards-group {
     display: table-cell;
+    position: relative;
     vertical-align: middle;
 }
 .card {
     background-color: $background-color;
+    box-sizing: border-box;
+    color: $darker-brand-color;
     float: left;
     height: 300px;
-    margin: 0 5%;
+    margin: 2% 5%;
+    min-width: 200px;
+    padding: 2em;
+    position: relative;
     width: 23%;
+
+
+    $triangular-border-width: 50px;
+    &::before {
+        border-left: 0px solid transparent; 
+        border-right: $triangular-border-width solid transparent;
+        border-top: $triangular-border-width solid $darker-brand-color;
+        content: '';
+
+        height: 0;
+
+        left: 0;
+        position: absolute;
+        top: 0;
+        transition: border-width 0.3s;
+
+        width: 0;
+        z-index: 1;
+    }
+    &::after {
+        border-left: $triangular-border-width solid transparent;
+        border-right: 0px solid transparent; 
+        border-bottom: $triangular-border-width solid $darker-brand-color;
+        content: '';
+
+        height: 0;
+
+        bottom: 0;
+        position: absolute;
+        right: 0;
+        transition: border-width 0.3s;
+
+        width: 0;
+        z-index: 1;
+    }
+
+    &:hover::before {
+        border-right-width: $triangular-border-width + 20px; 
+        border-top-width: $triangular-border-width + 20px; 
+    }
+    &:hover::after {
+        border-bottom-width: $triangular-border-width + 20px; 
+        border-left-width: $triangular-border-width + 20px; 
+    }
+
+    &:active::before {
+        border-right-width: $triangular-border-width - 10px; 
+        border-top-width: $triangular-border-width - 10px; 
+    }
+    &:active::after {
+        border-bottom-width: $triangular-border-width - 10px; 
+        border-left-width: $triangular-border-width - 10px; 
+    }
 }
 
 .banner-slogan {
@@ -183,31 +243,42 @@ button, .button {
 
 .anti-hexagon {
     background-image: url('/images/mookit_1.jpg');
-    background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
 
     display: inline-block;
     overflow: hidden;
     position: relative;
+
+    transition: background-size 0.3s;
+
     $width-of-triangle: 100px;
     $no-of-triangles: 4;
     $width: $no-of-triangles * $width-of-triangle;
     width: $width;
-    @extend %clearfix;
+
     z-index: 1;
 
+    @extend %clearfix;
 
-    .base-triangle-box {
-        @extend %clearfix;
+    &:hover {
+        background-size: 140%; 
     }
 
     .triangle, .upside-triangle {
         float: left;
+        opacity: 1;
+        transition: opacity 0.5s;
         width: $width-of-triangle;
     } 
 
-    .hide {
-        visibility: hidden; 
+    .hide-triangles {
+        opacity: 0;
+    }
+
+    .base-triangle-box {
+        @extend %clearfix;
     }
 
     .stacked-triangle-box {

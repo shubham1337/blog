@@ -49,27 +49,27 @@
 
         //Fancy Navigation Links animation
         &::before {
+            background: $background-color;
             box-sizing: border-box;
+            content: '';
             position: absolute; 
             top: 0;
             left: 0;
             width: 100%;
             height: 1px;
-            background: $background-color;
-            content: '';
             transition: top 0.3s;
         }
 
         &::after {
+            background: $background-color;
             box-sizing: border-box;
+            content: '';
             position: absolute; 
             top: 0;
             left: 0;
             width: 1px;
             height: 1px;
-            background: $background-color;
-            content: '';
-            transition: height 0.3s;
+            transition: height 0.3s, width 0.3s;
         }
 
         &:hover::before {
