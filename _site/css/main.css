@@ -513,15 +513,10 @@ pre {
   background-color: #BF78FA;
   color: #fdfdfd; }
 
-.cards-wrapper {
-  display: table;
-  margin: 0 auto;
-  width: 80%; }
-
 .cards-group {
-  display: table-cell;
-  position: relative;
-  vertical-align: middle; }
+  position: relative; }
+  .cards-group .card:first-child {
+    margin-left: 4%; }
 
 .card {
   background-color: #fdfdfd;
@@ -529,11 +524,11 @@ pre {
   color: #7F08BF;
   float: left;
   height: 300px;
-  margin: 2% 5%;
+  margin: 2%;
   min-width: 200px;
   padding: 2em;
   position: relative;
-  width: 23%; }
+  width: 20%; }
   .card::before {
     border-left: 0px solid transparent;
     border-right: 50px solid transparent;
@@ -643,6 +638,7 @@ button, .button {
     right: 0; }
 
 .section-heading-wrapper {
+  cursor: pointer;
   text-align: center; }
 
 .section-heading {

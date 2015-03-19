@@ -27,15 +27,12 @@
     color: $background-color;
 }
 
-.cards-wrapper {
-    display: table;
-    margin: 0 auto;
-    width: 80%;
-}
 .cards-group {
-    display: table-cell;
     position: relative;
-    vertical-align: middle;
+
+    .card:first-child {
+        margin-left: 4%; 
+    }
 }
 .card {
     background-color: $background-color;
@@ -43,11 +40,11 @@
     color: $darker-brand-color;
     float: left;
     height: 300px;
-    margin: 2% 5%;
+    margin: 2%;
     min-width: 200px;
     padding: 2em;
     position: relative;
-    width: 23%;
+    width: 20%;
 
 
     $triangular-border-width: 50px;
@@ -201,6 +198,7 @@ button, .button {
 }
 
 .section-heading-wrapper {
+    cursor: pointer;
     text-align: center; 
 }
 .section-heading {
