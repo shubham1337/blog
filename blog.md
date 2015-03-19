@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Blog
+tagline: I've written a few things (other than code).
 permalink: /blog/
 ---
 

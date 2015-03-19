@@ -1,6 +1,7 @@
 ---
 layout: page
-title: What I use
+title: Tools I use
+tagline: A Developer is as productive as his tools.
 permalink: /tools/
 ---
 

@@ -303,3 +303,17 @@ button, .button {
     color: $background-color;
     font-size: 48px;
 }
+
+.page-header {
+    background-color: $dark-brand-color;
+    background-image: url('../images/banner.svg');
+    box-sizing: border-box;
+
+    padding: 4em 15px;
+
+    .page-title {
+        color: $background-color;
+        font-size: 4em;
+        line-height: 1;
+    }
+}

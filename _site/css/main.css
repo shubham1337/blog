@@ -707,3 +707,13 @@ button, .button {
 .current-section {
   color: #fdfdfd;
   font-size: 48px; }
+
+.page-header {
+  background-color: #9D4AD4;
+  background-image: url("../images/banner.svg");
+  box-sizing: border-box;
+  padding: 4em 15px; }
+  .page-header .page-title {
+    color: #fdfdfd;
+    font-size: 4em;
+    line-height: 1; }
