@@ -4,6 +4,7 @@
 .site-header {
     min-height: $header-height;
     background-color: $darker-brand-color;
+    overflow: hidden;
 
     left: 0;
     position: fixed;
@@ -15,10 +16,10 @@
 
 .site-title {
     font-size: 26px;
+    float: left;
     line-height: 56px;
     letter-spacing: -1px;
     margin-bottom: 0;
-    float: left;
 
     &,
     &:visited {

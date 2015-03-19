@@ -293,3 +293,15 @@ button, .button {
 .upside-triangle {
     transform: rotate(180deg); 
 }
+
+.current-section-wrapper {
+    bottom: -48px;
+    left: calc(50% - 200px);
+    position: absolute;
+    width: 400px;
+    text-align: center;
+}
+.current-section {
+    color: $background-color;
+    font-size: 48px;
+}

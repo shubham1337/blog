@@ -151,6 +151,7 @@ pre {
 .site-header {
   min-height: 56px;
   background-color: #7F08BF;
+  overflow: hidden;
   left: 0;
   position: fixed;
   right: 0;
@@ -159,10 +160,10 @@ pre {
 
 .site-title {
   font-size: 26px;
+  float: left;
   line-height: 56px;
   letter-spacing: -1px;
-  margin-bottom: 0;
-  float: left; }
+  margin-bottom: 0; }
   .site-title, .site-title:visited {
     /*color: $grey-color-dark;*/
     color: #fdfdfd; }
@@ -699,3 +700,14 @@ button, .button {
 
 .upside-triangle {
   transform: rotate(180deg); }
+
+.current-section-wrapper {
+  bottom: -48px;
+  left: calc(50% - 200px);
+  position: absolute;
+  width: 400px;
+  text-align: center; }
+
+.current-section {
+  color: #fdfdfd;
+  font-size: 48px; }

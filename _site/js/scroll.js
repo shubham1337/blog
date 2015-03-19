@@ -61,7 +61,6 @@ $(window).scroll(function() {
     else {
 
         if (triangleTwinkleAnimationDone) {
-            console.log('class removed');
             $('.hexagon').removeClass('hide-triangles');
         }
         triangleTwinkleAnimationDone = false;
@@ -69,6 +68,26 @@ $(window).scroll(function() {
     }
 
 
+    if (scrollPos >= bannerHeight * 2) {
+        $('.current-section').html('Blog Posts');
+        console.log(scrollPos, Math.round(offsetTop/2) - bannerHeight*2);
+        console.log('blog');
+        var perSectionScroll = scrollPos - Math.round(offsetTop/2) - bannerHeight * 2;
+        if (perSectionScroll < offsetTop - 10)
+            $('.current-section-wrapper').css('bottom', -48 + perSectionScroll + 'px');
+        else
+            $('.current-section-wrapper').css('bottom', -2);
+    } else if (scrollPos >= bannerHeight) {
+        $('.current-section').html('Latest Projects');
+        console.log('proj');
+        var perSectionScroll = scrollPos + 5 - Math.round(offsetTop/2) - bannerHeight;
+        if (perSectionScroll < offsetTop - 10)
+            $('.current-section-wrapper').css('bottom', -48 + perSectionScroll + 'px');
+        else
+            $('.current-section-wrapper').css('bottom', -2);
+    } else {
+        $('.current-section').html('');
+    }
 
 
 });
