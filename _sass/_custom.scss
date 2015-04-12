@@ -25,6 +25,10 @@
 .home > section:nth-child(odd):not(:first-child) {
     background-color: $brand-color;
     color: $background-color;
+
+    .section-heading {
+        color: $background-color;
+    }
 }
 
 .cards-group {
@@ -203,6 +207,7 @@ button, .button {
 }
 .section-heading {
     font-size: 48px; 
+    color: $dark-brand-color;
 
     &::before {
         content: "<<<";
@@ -228,6 +233,13 @@ button, .button {
     }
     &:active::before {
         right: 0px;
+    }
+}
+.section-heading-wrapper.left-aligned {
+    text-align: left;
+
+    .section-heading::before {
+        content: '';
     }
 }
 
@@ -315,5 +327,35 @@ button, .button {
         color: $background-color;
         font-size: 4em;
         line-height: 1;
+    }
+}
+
+.project-row {
+    margin: 50px 0;
+    @extend %clearfix;
+
+    .anti-hexagon {
+        .hexagon {
+            opacity: 0; 
+        }
+    }
+    .project-description {
+        box-sizing: border-box;
+        display: inline-block;
+        height: 250px;
+        padding: 2em;
+        position: relative;
+        top: 50px;
+        width: 60%;
+    }
+    &:nth-child(odd) {
+        .project-description {
+            box-shadow: 5px 0px 5px 1px $darker-brand-color;
+        }
+    }
+    &:nth-child(even) {
+        .project-description {
+            box-shadow: -5px 0px 5px 1px $darker-brand-color;
+        }
     }
 }
