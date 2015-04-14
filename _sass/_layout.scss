@@ -145,12 +145,19 @@
 .footer-heading {
     font-size: 18px;
     margin-bottom: $spacing-unit / 2;
+    color: $darker-brand-color;
 }
 
 .contact-list,
 .social-media-list {
     list-style: none;
     margin-left: 0;
+    @extend %clearfix;
+
+    li {
+        float: left;
+        margin: 10px;
+    }
 }
 
 .footer-col-wrapper {
@@ -226,7 +233,7 @@
 
 .post-meta {
     font-size: $small-font-size;
-    color: $grey-color;
+    color: $darker-brand-color;
 }
 
 .post-link {
@@ -247,6 +254,7 @@
     font-size: 42px;
     letter-spacing: -1px;
     line-height: 1;
+    color: $darker-brand-color;
 
     @include media-query($on-laptop) {
         font-size: 36px;

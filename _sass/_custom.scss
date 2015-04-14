@@ -33,23 +33,28 @@
 
 .cards-group {
     position: relative;
-
-    .card:first-child {
-        margin-left: 4%; 
-    }
+    @extend %clearfix;
 }
 .card {
     background-color: $background-color;
+    border: 2px solid $darker-brand-color;
     box-sizing: border-box;
     color: $darker-brand-color;
     float: left;
     height: 300px;
     margin: 2%;
     min-width: 200px;
+    overflow: hidden;
     padding: 2em;
     position: relative;
-    width: 20%;
+    width: 21%;
 
+    h2 {
+        margin: 0;
+    }
+    p {
+        margin-top: 10px;
+    }
 
     $triangular-border-width: 50px;
     &::before {
@@ -101,6 +106,14 @@
     &:active::after {
         border-bottom-width: $triangular-border-width - 10px; 
         border-left-width: $triangular-border-width - 10px; 
+    }
+}
+.page-content {
+    .cards-group {
+    }
+    .card {
+        border: 2px solid $darker-brand-color;
+        width: 29%;
     }
 }
 
@@ -167,38 +180,6 @@ button, .button {
         text-transform: none;
     }
 
-}
-
-.parallelogram {
-    display: inline-block;
-    position: relative; 
-    width: 33%;
-
-    .triangle {
-        width: 49%;
-    }
-
-    .triangle:first-child {
-        transition: left 0.5s;
-        transform: rotate(0deg); 
-
-        left: 12.5%;
-        position: relative;
-    }
-    .triangle:last-child {
-        transition: right 0.5s;
-        transform: rotate(180deg); 
-
-        position: relative;
-        right: 12.5%;
-    }
-
-    &:hover .triangle:first-child {
-        left: 0; 
-    }
-    &:hover .triangle:last-child {
-        right: 0; 
-    }
 }
 
 .section-heading-wrapper {
@@ -378,6 +359,40 @@ button, .button {
     &:hover {
         background-size: 150%;
     }
+
+    $triangular-border-width: 50px;
+    &::before {
+        border-left: 0px solid transparent; 
+        border-right: $triangular-border-width solid transparent;
+        border-top: $triangular-border-width solid $darker-brand-color;
+        content: '';
+
+        height: 0;
+
+        left: 0;
+        position: absolute;
+        top: 0;
+        transition: border-width 0.3s;
+
+        width: 0;
+        z-index: 1;
+    }
+    &::after {
+        border-left: $triangular-border-width solid transparent;
+        border-right: 0px solid transparent; 
+        border-bottom: $triangular-border-width solid $darker-brand-color;
+        content: '';
+
+        height: 0;
+
+        bottom: 0;
+        position: absolute;
+        right: 0;
+        transition: border-width 0.3s;
+
+        width: 0;
+        z-index: 1;
+    }
 }
 .project-summary {
     box-sizing: border-box;
@@ -394,5 +409,13 @@ button, .button {
     &::after {
         content: '>>>';
         margin-left: 10px;
+    }
+}
+
+.icon--email {
+    svg {
+        height: 2em;
+        width: 2em;
+        vertical-align: middle;
     }
 }
