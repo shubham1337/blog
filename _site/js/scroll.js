@@ -29,18 +29,41 @@ function scrollingAnimations () {
         var offsetTop       = bannerOffset.top;
         var bannerScroll    = scrollPos - offsetTop;
 
-        //Only executes when scrollTop is in the banner
-        if (bannerScroll >= 0 && bannerScroll <= bannerHeight) {
-            var percentScroll = 120 + ((bannerScroll / bannerHeight) * (bannerHeight - 120));
+        if (!isMobileDevice) {
 
-            $('.banner-content-wrapper').css('top', percentScroll + 'px');
-        } else {
-            $('.banner-content-wrapper').css('top', 120 + 'px');
+            //Only executes when scrollTop is in the banner
+            if (bannerScroll >= 0 && bannerScroll <= bannerHeight) {
+                var percentScroll = 120 + ((bannerScroll / bannerHeight) * (bannerHeight - 120));
+
+                $('.banner-content-wrapper').css('top', percentScroll + 'px');
+            } else {
+                $('.banner-content-wrapper').css('top', 120 + 'px');
+            }
+
+            // Section Heading attaching to Nav bar animation
+            if (scrollPos >= bannerHeight * 2) {
+                $('.current-section').html('Blog Posts');
+                var perSectionScroll = scrollPos - Math.round(offsetTop/2) - bannerHeight * 2;
+                if (perSectionScroll < offsetTop - 10)
+                    $('.current-section-wrapper').css('bottom', -48 + perSectionScroll + 'px');
+                else
+                    $('.current-section-wrapper').css('bottom', -2);
+            } else if (scrollPos >= bannerHeight) {
+                $('.current-section').html('Latest Projects');
+                var perSectionScroll = scrollPos + 5 - Math.round(offsetTop/2) - bannerHeight;
+                if (perSectionScroll < offsetTop - 10)
+                    $('.current-section-wrapper').css('bottom', -48 + perSectionScroll + 'px');
+                else
+                    $('.current-section-wrapper').css('bottom', -2);
+            } else {
+                $('.current-section').html('');
+            }
+
         }
 
         //Twinkling Triangle animation for anti-hexagons
         if (scrollPos > Math.round(offsetTop + bannerHeight / 2) &&
-            scrollPos < Math.round(offsetTop + bannerHeight * 1.5)) {
+                scrollPos < Math.round(offsetTop + bannerHeight * 1.5)) {
 
             if (!triangleTwinkleAnimationDone) {
                 var hexagons = $('.hexagon');
@@ -70,25 +93,5 @@ function scrollingAnimations () {
 
         }
 
-
-        if (scrollPos >= bannerHeight * 2) {
-            $('.current-section').html('Blog Posts');
-            var perSectionScroll = scrollPos - Math.round(offsetTop/2) - bannerHeight * 2;
-            if (perSectionScroll < offsetTop - 10)
-                $('.current-section-wrapper').css('bottom', -48 + perSectionScroll + 'px');
-            else
-                $('.current-section-wrapper').css('bottom', -2);
-        } else if (scrollPos >= bannerHeight) {
-            $('.current-section').html('Latest Projects');
-            var perSectionScroll = scrollPos + 5 - Math.round(offsetTop/2) - bannerHeight;
-            if (perSectionScroll < offsetTop - 10)
-                $('.current-section-wrapper').css('bottom', -48 + perSectionScroll + 'px');
-            else
-                $('.current-section-wrapper').css('bottom', -2);
-        } else {
-            $('.current-section').html('');
-        }
-
-
-    });
+    });// Scroll ends
 }
