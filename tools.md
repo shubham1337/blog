@@ -9,7 +9,7 @@ permalink: /tools/
     <h2 class="section-heading">Software</h2>
 </div>
 
-- [Vim](http://www.vim.org/). Simply one of the best text-editor out there.
+- [Vim](http://www.vim.org/). Simply one of the best text-editors out there.
 - [Arch Linux](http://www.archlinux.org/) is my preferred flavour of Linux.
 - [Git](http://git-scm.com/) VCS. Great tool for managing content. A potential lifesaver for content creators.
 - [i3wm](http://i3wm.org/), Tiling window manager. Light weight, Fast and simple.

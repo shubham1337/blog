@@ -129,7 +129,7 @@ pre {
 /**
  * Clearfix
  */
-.wrapper:after, .footer-col-wrapper:after, .anti-hexagon:after, .anti-hexagon .base-triangle-box:after, .project-row:after {
+.wrapper:after, .footer-col-wrapper:after, .anti-hexagon:after, .anti-hexagon .base-triangle-box:after, .project:after {
   content: "";
   display: table;
   clear: both; }
@@ -726,19 +726,53 @@ button, .button {
     font-size: 4em;
     line-height: 1; }
 
-.project-row {
-  margin: 50px 0; }
-  .project-row .anti-hexagon .hexagon {
-    opacity: 0; }
-  .project-row .project-description {
-    box-sizing: border-box;
-    display: inline-block;
-    height: 250px;
-    padding: 2em;
-    position: relative;
-    top: 50px;
-    width: 60%; }
-  .project-row:nth-child(odd) .project-description {
-    box-shadow: 5px 0px 5px 1px #7F08BF; }
-  .project-row:nth-child(even) .project-description {
-    box-shadow: -5px 0px 5px 1px #7F08BF; }
+.project {
+  border: 1px solid #BF78FA;
+  position: relative;
+  z-index: 0; }
+  .project .project-screenshot:first-child {
+    float: left; }
+  .project .project-screenshot:last-child {
+    float: right; }
+
+.project-background {
+  background-image: url("/images/mookit_1.jpg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 1;
+  filter: blur(5px) opacity(0.6); }
+
+.project-screenshot {
+  background-image: url("/images/mookit_1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  border: 5px solid #7F08BF;
+  box-sizing: border-box;
+  height: 300px;
+  position: relative;
+  transition: background-size 0.5s;
+  width: 30%;
+  z-index: 2; }
+  .project-screenshot:hover {
+    background-size: 150%; }
+
+.project-summary {
+  box-sizing: border-box;
+  display: inline-block;
+  padding: 1em;
+  position: relative;
+  width: 70%;
+  z-index: 2; }
+
+.project-heading {
+  color: #7F08BF; }
+  .project-heading::after {
+    content: '>>>';
+    margin-left: 10px; }

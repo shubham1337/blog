@@ -330,32 +330,69 @@ button, .button {
     }
 }
 
-.project-row {
-    margin: 50px 0;
+.project {
+    border: 1px solid $brand-color;
+    position: relative;
+    z-index: 0;
     @extend %clearfix;
 
-    .anti-hexagon {
-        .hexagon {
-            opacity: 0; 
-        }
+    .project-screenshot:first-child {
+        float: left;
     }
-    .project-description {
-        box-sizing: border-box;
-        display: inline-block;
-        height: 250px;
-        padding: 2em;
-        position: relative;
-        top: 50px;
-        width: 60%;
+    .project-screenshot:last-child {
+        float: right;
     }
-    &:nth-child(odd) {
-        .project-description {
-            box-shadow: 5px 0px 5px 1px $darker-brand-color;
-        }
+}
+.project-background {
+    background-image: url('/images/mookit_1.jpg');
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+
+    z-index: 1;
+
+    filter: blur(5px) opacity(0.6);
+}
+.project-screenshot {
+    background-image: url('/images/mookit_1.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+    border: 5px solid $darker-brand-color;
+    box-sizing: border-box;
+
+    height: 300px;
+    position: relative;
+    transition: background-size 0.5s;
+    width: 30%;
+
+    z-index: 2;
+
+    &:hover {
+        background-size: 150%;
     }
-    &:nth-child(even) {
-        .project-description {
-            box-shadow: -5px 0px 5px 1px $darker-brand-color;
-        }
+}
+.project-summary {
+    box-sizing: border-box;
+    display: inline-block;
+    padding: 1em;
+    position: relative;
+    width: 70%;
+
+    z-index: 2;
+}
+.project-heading {
+    color: $darker-brand-color;
+
+    &::after {
+        content: '>>>';
+        margin-left: 10px;
     }
 }
