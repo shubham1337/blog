@@ -20,7 +20,7 @@ function scrollingAnimations () {
             }
         }
         return randomArray;
-    };
+    }
 
 
     $(window).scroll(function() { 
@@ -40,17 +40,18 @@ function scrollingAnimations () {
                 $('.banner-content-wrapper').css('top', 120 + 'px');
             }
 
+            var perSectionScroll;
             // Section Heading attaching to Nav bar animation
             if (scrollPos >= bannerHeight * 2) {
                 $('.current-section').html('Blog Posts');
-                var perSectionScroll = scrollPos - Math.round(offsetTop/2) - bannerHeight * 2;
+                perSectionScroll = scrollPos - Math.round(offsetTop/2) - bannerHeight * 2;
                 if (perSectionScroll < offsetTop - 10)
                     $('.current-section-wrapper').css('bottom', -48 + perSectionScroll + 'px');
                 else
                     $('.current-section-wrapper').css('bottom', -2);
             } else if (scrollPos >= bannerHeight) {
                 $('.current-section').html('Latest Projects');
-                var perSectionScroll = scrollPos + 5 - Math.round(offsetTop/2) - bannerHeight;
+                perSectionScroll = scrollPos + 5 - Math.round(offsetTop/2) - bannerHeight;
                 if (perSectionScroll < offsetTop - 10)
                     $('.current-section-wrapper').css('bottom', -48 + perSectionScroll + 'px');
                 else
@@ -71,7 +72,7 @@ function scrollingAnimations () {
 
                 var i = 0;
                 var animationDelay = 50;
-                function animateTriangle() {
+                var animateTriangle = function () {
                     $(hexagons[randomArray[i] - 1]).addClass('hide-triangles');
                     i++;
                     if (i < randomArray.length) {

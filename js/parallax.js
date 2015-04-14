@@ -12,6 +12,6 @@ function parallaxAnimation () {
         var percentX = - Math.round((mouseX - (width  / 2)) / 10),
             percentY = - Math.round((mouseY - (height / 2)) / 10);
 
-        $(this).css('background-position', percentX + 'px ' + percentY + 'px')
+        $(this).css('background-position', percentX + 'px ' + percentY + 'px');
     });
 }
