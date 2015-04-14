@@ -130,7 +130,7 @@ pre {
  * Clearfix
  */
 .wrapper:after, .contact-list:after,
-.social-media-list:after, .footer-col-wrapper:after, .cards-group:after, .anti-hexagon:after, .anti-hexagon .base-triangle-box:after, .project:after {
+.social-media-list:after, .footer-col-wrapper:after, .cards-group:after, .anti-hexagon:after, .anti-hexagon .base-triangle-box:after, .small-anti-hexagon:after, .small-anti-hexagon .base-triangle-box:after, .project:after {
   content: "";
   display: table;
   clear: both; }
@@ -152,7 +152,6 @@ pre {
 .site-header {
   min-height: 56px;
   background-color: #7F08BF;
-  overflow: hidden;
   left: 0;
   position: fixed;
   right: 0;
@@ -185,39 +184,39 @@ pre {
     position: relative;
     text-decoration: none;
     text-shadow: 0 0 1px rgba(255, 255, 255, 0.3); }
-    .site-nav .page-link::before {
-      background: #fdfdfd;
-      box-sizing: border-box;
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 1px;
-      transition: top 0.3s; }
-    .site-nav .page-link::after {
-      background: #fdfdfd;
-      box-sizing: border-box;
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 1px;
-      height: 1px;
-      transition: height 0.3s, width 0.3s; }
-    .site-nav .page-link:hover::before {
-      top: 100%;
-      opacity: 1; }
-    .site-nav .page-link:hover::after {
-      height: 100%; }
-  @media screen and (max-width: 600px) {
+    @media screen and (min-width: 700px) {
+      .site-nav .page-link::before {
+        background: #fdfdfd;
+        box-sizing: border-box;
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 1px;
+        transition: top 0.3s; }
+      .site-nav .page-link::after {
+        background: #fdfdfd;
+        box-sizing: border-box;
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 1px;
+        height: 1px;
+        transition: height 0.3s, width 0.3s; }
+      .site-nav .page-link:hover::before {
+        top: 100%;
+        opacity: 1; }
+      .site-nav .page-link:hover::after {
+        height: 100%; } }
+  @media screen and (max-width: 700px) {
     .site-nav {
       position: absolute;
       top: 9px;
       right: 30px;
       background-color: #fdfdfd;
-      border: 1px solid #e8e8e8;
-      border-radius: 5px;
+      border: 2px solid #7F08BF;
       text-align: right; }
       .site-nav .menu-icon {
         display: block;
@@ -231,7 +230,7 @@ pre {
           width: 18px;
           height: 15px; }
           .site-nav .menu-icon > svg path {
-            fill: #424242; }
+            fill: #7F08BF; }
       .site-nav .trigger {
         clear: both;
         display: none; }
@@ -297,7 +296,7 @@ pre {
   .footer-col-3 {
     width: -webkit-calc(100% - (30px / 2));
     width: calc(100% - (30px / 2)); } }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
   .footer-col {
     float: none;
     width: -webkit-calc(100% - (30px / 2));
@@ -533,7 +532,6 @@ pre {
   float: left;
   height: 300px;
   margin: 2%;
-  min-width: 200px;
   overflow: hidden;
   padding: 2em;
   position: relative;
@@ -542,6 +540,12 @@ pre {
     margin: 0; }
   .card p {
     margin-top: 10px; }
+  @media screen and (max-width: 1230px) {
+    .card {
+      width: 45%; } }
+  @media screen and (max-width: 580px) {
+    .card {
+      width: 96%; } }
   .card::before {
     border-left: 0px solid transparent;
     border-right: 50px solid transparent;
@@ -579,13 +583,17 @@ pre {
     border-bottom-width: 40px;
     border-left-width: 40px; }
 
-.page-content .card {
-  border: 2px solid #7F08BF;
-  width: 29%; }
+@media screen and (min-width: 700px) {
+  .page-content .card {
+    border: 2px solid #7F08BF;
+    width: 29%; } }
 
 .banner-slogan {
   font-size: 72px;
   color: #fdfdfd; }
+  @media screen and (max-width: 700px) {
+    .banner-slogan {
+      font-size: 32px; } }
 
 button, .button {
   background: transparent;
@@ -658,6 +666,9 @@ button, .button {
     left: 0px; }
   .section-heading:active::before {
     right: 0px; }
+  @media screen and (max-width: 580px) {
+    .section-heading {
+      font-size: 24px; } }
 
 .section-heading-wrapper.left-aligned {
   text-align: left; }
@@ -680,6 +691,9 @@ button, .button {
   transition: background-size 0.3s;
   width: 400px;
   z-index: 1; }
+  @media screen and (max-width: 450px) {
+    .anti-hexagon {
+      display: none; } }
   .anti-hexagon:hover {
     background-size: 140%; }
   .anti-hexagon .triangle, .anti-hexagon .upside-triangle {
@@ -696,6 +710,36 @@ button, .button {
     right: -50px;
     top: 0; }
 
+.small-anti-hexagon {
+  background-image: url("/images/mookit_1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  display: inline-block;
+  overflow: hidden;
+  position: relative;
+  transition: background-size 0.3s;
+  width: 200px;
+  z-index: 1; }
+  @media screen and (min-width: 450px) {
+    .small-anti-hexagon {
+      display: none; } }
+  .small-anti-hexagon:hover {
+    background-size: 140%; }
+  .small-anti-hexagon .triangle, .small-anti-hexagon .upside-triangle {
+    float: left;
+    opacity: 1;
+    transition: opacity 0.5s;
+    width: 50px; }
+  .small-anti-hexagon .hide-triangles {
+    opacity: 0; }
+  .small-anti-hexagon .stacked-triangle-box {
+    bottom: 0;
+    left: -25px;
+    position: absolute;
+    right: -25px;
+    top: 0; }
+
 .upside-triangle {
   transform: rotate(180deg); }
 
@@ -705,6 +749,9 @@ button, .button {
   position: absolute;
   width: 400px;
   text-align: center; }
+  @media screen and (max-width: 1260px) {
+    .current-section-wrapper {
+      display: none; } }
 
 .current-section {
   color: #fdfdfd;
@@ -720,14 +767,13 @@ button, .button {
     font-size: 4em;
     line-height: 1; }
 
+/**
+ * Portfolio Page
+ */
 .project {
   border: 1px solid #BF78FA;
   position: relative;
   z-index: 0; }
-  .project .project-screenshot:first-child {
-    float: left; }
-  .project .project-screenshot:last-child {
-    float: right; }
 
 .project-background {
   background-image: url("/images/mookit_1.jpg");
@@ -749,11 +795,15 @@ button, .button {
   background-size: 100%;
   border: 5px solid #7F08BF;
   box-sizing: border-box;
+  float: left;
   height: 300px;
   position: relative;
   transition: background-size 0.5s;
   width: 30%;
   z-index: 2; }
+  @media screen and (max-width: 700px) {
+    .project-screenshot {
+      width: 100%; } }
   .project-screenshot:hover {
     background-size: 150%; }
   .project-screenshot::before {
@@ -788,6 +838,9 @@ button, .button {
   position: relative;
   width: 70%;
   z-index: 2; }
+  @media screen and (max-width: 700px) {
+    .project-summary {
+      width: 100%; } }
 
 .project-heading {
   color: #7F08BF; }

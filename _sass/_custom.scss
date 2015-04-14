@@ -43,7 +43,6 @@
     float: left;
     height: 300px;
     margin: 2%;
-    min-width: 200px;
     overflow: hidden;
     padding: 2em;
     position: relative;
@@ -54,6 +53,13 @@
     }
     p {
         margin-top: 10px;
+    }
+
+    @media screen and (max-width: 1230px) {
+        width: 45%;
+    }
+    @media screen and (max-width: 580px) {
+        width: 96%;
     }
 
     $triangular-border-width: 50px;
@@ -109,17 +115,21 @@
     }
 }
 .page-content {
-    .cards-group {
-    }
-    .card {
-        border: 2px solid $darker-brand-color;
-        width: 29%;
+    @media screen and (min-width: 700px) {
+        .card {
+            border: 2px solid $darker-brand-color;
+            width: 29%;
+        }
     }
 }
 
 .banner-slogan {
     font-size: 72px; 
     color: $background-color;
+
+    @media screen and (max-width: 700px) {
+        font-size: 32px;
+    }
 }
 
 button, .button {
@@ -215,6 +225,10 @@ button, .button {
     &:active::before {
         right: 0px;
     }
+
+    @media screen and (max-width: 580px) {
+        font-size: 24px;
+    }
 }
 .section-heading-wrapper.left-aligned {
     text-align: left;
@@ -244,14 +258,71 @@ button, .button {
 
     transition: background-size 0.3s;
 
-    $width-of-triangle: 100px;
+    $width: 400px;
     $no-of-triangles: 4;
-    $width: $no-of-triangles * $width-of-triangle;
+    $width-of-triangle: $width/$no-of-triangles;
+    width: $width;
+
+    z-index: 1;
+
+    @media screen and (max-width: 450px) {
+        display: none;
+    }
+
+    @extend %clearfix;
+
+    &:hover {
+        background-size: 140%; 
+    }
+
+    .triangle, .upside-triangle {
+        float: left;
+        opacity: 1;
+        transition: opacity 0.5s;
+        width: $width-of-triangle;
+    } 
+
+    .hide-triangles {
+        opacity: 0;
+    }
+
+    .base-triangle-box {
+        @extend %clearfix;
+    }
+
+    .stacked-triangle-box {
+        bottom: 0;
+        left: -($width-of-triangle/2);
+        position: absolute; 
+        right: -($width-of-triangle/2);
+        top: 0;
+    }
+}
+
+.small-anti-hexagon {
+    background-image: url('/images/mookit_1.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+
+    transition: background-size 0.3s;
+
+    $width: 200px;
+    $no-of-triangles: 4;
+    $width-of-triangle: $width/$no-of-triangles;
     width: $width;
 
     z-index: 1;
 
     @extend %clearfix;
+
+    @media screen and (min-width: 450px) {
+        display: none;
+    }
 
     &:hover {
         background-size: 140%; 
@@ -291,6 +362,10 @@ button, .button {
     position: absolute;
     width: 400px;
     text-align: center;
+
+    @media screen and (max-width: 1260px) {
+        display: none;
+    }
 }
 .current-section {
     color: $background-color;
@@ -311,18 +386,14 @@ button, .button {
     }
 }
 
+/**
+ * Portfolio Page
+ */
 .project {
     border: 1px solid $brand-color;
     position: relative;
     z-index: 0;
     @extend %clearfix;
-
-    .project-screenshot:first-child {
-        float: left;
-    }
-    .project-screenshot:last-child {
-        float: right;
-    }
 }
 .project-background {
     background-image: url('/images/mookit_1.jpg');
@@ -349,12 +420,17 @@ button, .button {
     border: 5px solid $darker-brand-color;
     box-sizing: border-box;
 
+    float: left;
     height: 300px;
     position: relative;
     transition: background-size 0.5s;
     width: 30%;
 
     z-index: 2;
+
+    @media screen and (max-width: $on-palm) {
+        width: 100%;
+    }
 
     &:hover {
         background-size: 150%;
@@ -402,6 +478,10 @@ button, .button {
     width: 70%;
 
     z-index: 2;
+
+    @media screen and (max-width: $on-palm) {
+        width: 100%;
+    }
 }
 .project-heading {
     color: $darker-brand-color;

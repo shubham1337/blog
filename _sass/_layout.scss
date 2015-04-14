@@ -4,7 +4,6 @@
 .site-header {
     min-height: $header-height;
     background-color: $darker-brand-color;
-    overflow: hidden;
 
     left: 0;
     position: fixed;
@@ -47,39 +46,41 @@
         position: relative;
         text-decoration: none;
         text-shadow: 0 0 1px rgba(255, 255, 255, 0.3);
+        
+        @media screen and (min-width: $on-palm) {
+            //Fancy Navigation Links animation
+            &::before {
+                background: $background-color;
+                box-sizing: border-box;
+                content: '';
+                position: absolute; 
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 1px;
+                transition: top 0.3s;
+            }
 
-        //Fancy Navigation Links animation
-        &::before {
-            background: $background-color;
-            box-sizing: border-box;
-            content: '';
-            position: absolute; 
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 1px;
-            transition: top 0.3s;
-        }
+            &::after {
+                background: $background-color;
+                box-sizing: border-box;
+                content: '';
+                position: absolute; 
+                top: 0;
+                left: 0;
+                width: 1px;
+                height: 1px;
+                transition: height 0.3s, width 0.3s;
+            }
 
-        &::after {
-            background: $background-color;
-            box-sizing: border-box;
-            content: '';
-            position: absolute; 
-            top: 0;
-            left: 0;
-            width: 1px;
-            height: 1px;
-            transition: height 0.3s, width 0.3s;
-        }
+            &:hover::before {
+                top: 100%;
+                opacity: 1;
+            }
 
-        &:hover::before {
-            top: 100%;
-            opacity: 1;
-        }
-
-        &:hover::after {
-            height: 100%;
+            &:hover::after {
+                height: 100%;
+            }
         }
     }
 
@@ -88,8 +89,7 @@
         top: 9px;
         right: 30px;
         background-color: $background-color;
-        border: 1px solid $grey-color-light;
-        border-radius: 5px;
+        border: 2px solid $darker-brand-color;
         text-align: right;
 
         .menu-icon {
@@ -106,7 +106,7 @@
                 height: 15px;
 
                 path {
-                    fill: $grey-color-dark;
+                    fill: $darker-brand-color;
                 }
             }
         }
