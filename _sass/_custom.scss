@@ -247,7 +247,6 @@ button, .button {
 }
 
 .anti-hexagon {
-    background-image: url('/images/mookit_1.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100%;
@@ -396,7 +395,6 @@ button, .button {
     @extend %clearfix;
 }
 .project-background {
-    background-image: url('/images/mookit_1.jpg');
     background-position: top;
     background-repeat: no-repeat;
     background-size: 100%;
@@ -409,10 +407,9 @@ button, .button {
 
     z-index: 1;
 
-    filter: blur(5px) opacity(0.6);
+    filter: blur(5px) opacity(0.4);
 }
 .project-screenshot {
-    background-image: url('/images/mookit_1.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100%;
@@ -499,3 +496,11 @@ button, .button {
         vertical-align: middle;
     }
 }
+
+.mookit-image {
+    background-image: url('/images/mookit_1.jpg');
+}
+.blog-image {
+    background-image: url('/images/blog_1.jpg');
+}
+

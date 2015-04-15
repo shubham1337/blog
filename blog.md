@@ -17,52 +17,7 @@ permalink: /blog/
                     <h2>{{ post.title }}</h2>
                     <h5>{{ post.date | date: "%b %-d, %Y" }}</h5>
                     <p>
-                        Consectetur autem sint voluptatem enim voluptatem eos impedit voluptas doloribus, blanditiis suscipit. Sunt sapiente eius dolore enim necessitatibus ea rerum? Provident saepe amet ex quod maiores. Sequi maiores sunt magni.
-                    </p>
-                </div>
-            </a>
-            <a href="{{ post.url | prepend: site.baseurl }}">
-                <div class="card">
-                    <h2>{{ post.title }}</h2>
-                    <h5>{{ post.date | date: "%b %-d, %Y" }}</h5>
-                    <p>
-                        Consectetur autem sint voluptatem enim voluptatem eos impedit voluptas doloribus, blanditiis suscipit. Sunt sapiente eius dolore enim necessitatibus ea rerum? Provident saepe amet ex quod maiores. Sequi maiores sunt magni.
-                    </p>
-                </div>
-            </a>
-            <a href="{{ post.url | prepend: site.baseurl }}">
-                <div class="card">
-                    <h2>{{ post.title }}</h2>
-                    <h5>{{ post.date | date: "%b %-d, %Y" }}</h5>
-                    <p>
-                        Consectetur autem sint voluptatem enim voluptatem eos impedit voluptas doloribus, blanditiis suscipit. Sunt sapiente eius dolore enim necessitatibus ea rerum? Provident saepe amet ex quod maiores. Sequi maiores sunt magni.
-                    </p>
-                </div>
-            </a>
-            <a href="{{ post.url | prepend: site.baseurl }}">
-                <div class="card">
-                    <h2>{{ post.title }}</h2>
-                    <h5>{{ post.date | date: "%b %-d, %Y" }}</h5>
-                    <p>
-                        Consectetur autem sint voluptatem enim voluptatem eos impedit voluptas doloribus, blanditiis suscipit. Sunt sapiente eius dolore enim necessitatibus ea rerum? Provident saepe amet ex quod maiores. Sequi maiores sunt magni.
-                    </p>
-                </div>
-            </a>
-            <a href="{{ post.url | prepend: site.baseurl }}">
-                <div class="card">
-                    <h2>{{ post.title }}</h2>
-                    <h5>{{ post.date | date: "%b %-d, %Y" }}</h5>
-                    <p>
-                        Consectetur autem sint voluptatem enim voluptatem eos impedit voluptas doloribus, blanditiis suscipit. Sunt sapiente eius dolore enim necessitatibus ea rerum? Provident saepe amet ex quod maiores. Sequi maiores sunt magni.
-                    </p>
-                </div>
-            </a>
-            <a href="{{ post.url | prepend: site.baseurl }}">
-                <div class="card">
-                    <h2>{{ post.title }}</h2>
-                    <h5>{{ post.date | date: "%b %-d, %Y" }}</h5>
-                    <p>
-                        Consectetur autem sint voluptatem enim voluptatem eos impedit voluptas doloribus, blanditiis suscipit. Sunt sapiente eius dolore enim necessitatibus ea rerum? Provident saepe amet ex quod maiores. Sequi maiores sunt magni.
+                        {{ post.content }}
                     </p>
                 </div>
             </a>
