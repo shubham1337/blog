@@ -3,6 +3,7 @@ layout: post
 title:  "Welcome to my new website!"
 date:   2015-04-15 22:19:28
 categories: new website
+small_content: This is my first blog post!. I am very excited for this blog, so much so that a few exclamation marks cannot ...read more
 ---
 
 This is my first blog post!. I am very excited for this blog, so much so that a few exclamation marks cannot communicate the excitement, so here are a few emoticons :-D :-D :-P.
