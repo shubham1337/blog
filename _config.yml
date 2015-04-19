@@ -13,3 +13,7 @@ linkedin_username:  https://in.linkedin.com/pub/shubham-sharma/b3/244/761
 
 # Build settings
 markdown: kramdown
+
+# Auto Generation of sitemap.xml by GitHub Pages
+gems:
+    - jekyll-sitemap
