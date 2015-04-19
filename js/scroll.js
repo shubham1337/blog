@@ -71,7 +71,7 @@ function scrollingAnimations () {
                 var randomArray = randomTriangles(1, hexagons.length);
 
                 var i = 0;
-                var animationDelay = 50;
+                var animationDelay = 15;
                 var animateTriangle = function () {
                     $(hexagons[randomArray[i] - 1]).addClass('hide-triangles');
                     i++;
