@@ -40,8 +40,8 @@ module.exports = function(grunt) {
         },
 
 		rewrite: {
-			indexFile: {
-				src: '_site/index.html',
+			htmlFiles: {
+				src: '_site/**/*.html',
 				editor: function(contents, filePath){
 					var newContents = contents.replace(/main\.css/, "main.min.css");
 					
@@ -150,7 +150,7 @@ module.exports = function(grunt) {
             'jshint',
             'uglify',
 
-            'rewrite:indexFile',
+            'rewrite:htmlFiles',
             'htmlmin',
 
             'clean:afterBuild'

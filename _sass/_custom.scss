@@ -407,6 +407,7 @@ button, .button {
 
     z-index: 1;
 
+    -webkit-filter: blur(5px) opacity(0.4);
     filter: blur(5px) opacity(0.4);
 }
 .project-screenshot {
