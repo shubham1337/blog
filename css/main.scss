@@ -19,11 +19,16 @@ $text-color:       #111;
 $background-color: #fdfdfd;
 
 //Color Swatch
-$darker-brand-color:    #7F08BF;
+/*$darker-brand-color:    #7F08BF;
 $dark-brand-color:      #9D4AD4;
 $brand-color:           #BF78FA;
-$light-brand-color:     #DBA2FA;
+$light-brand-color:     #DBA2FA;*/
 /*Blue #36AEE7*/
+
+$light-brand-color:     #9999FF;
+$darker-brand-color:    darken($light-brand-color, 15%);
+$dark-brand-color:      darken($light-brand-color, 10%);
+$brand-color:           darken($light-brand-color, 5%);
 
 $grey-color:       #828282;
 $grey-color-light: lighten($grey-color, 40%);
