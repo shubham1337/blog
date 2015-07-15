@@ -14,4 +14,4 @@ In the near future this blog will be focused mostly on Technical stuff like, pla
 As a geek I try out new things quite often, so most of the time I loose track of what I have previously tested and played with. So, Hopefully this blog will be like a book keeping tool for all the technologies I have played with in the past and a constant reminder to try out something new and keep things nice and interesting for someone who might accidentally stumble upon this website :-).
 
 
-PS:- As you can see from the structure of the post that I am a newbie at writing posts, so please bare with me :-). I intend to learn as I write more posts.
+PS:- As you can see from the structure of the post that I am a newbie at writing posts, so please bear with me :-). I intend to learn as I write more posts.
