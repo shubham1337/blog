@@ -5,7 +5,7 @@ description: > # this means to ignore newlines until "baseurl:"
     A Personal Website for sharing thoughts and ideas about Technology.
 baseurl: "" # the subpath of your site, e.g. /blog/
 #slogan: "Simply Smart"
-slogan: "Front-End Developer"
+slogan: "Full-Stack Web Developer"
 url: "http://shubhamsharma.in" # the base hostname & protocol for your site
 twitter_username: shubh1337
 github_username:  shubham1337
