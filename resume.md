@@ -11,8 +11,8 @@ permalink: /resume/
 </div>
 
 
+#### **Cloud Developer at Caspar.ai (Working from Rotterdam, Netherlands office)**
 #### November 2019 to Present
-##### Cloud Developer at Caspar.ai (Working from Rotterdam, Netherlands office)
 
 - Built a Metrics Data Pipeline using Apache Kafka and AWS Glue/Athena.
 - Wrote Configuration management in Ansible for managing on-prem Kubernetes clusters.
@@ -23,41 +23,43 @@ permalink: /resume/
 - Built various CI/CD pipelines in Jenkins.
 
 
+#### **Cloud Developer Intern at Caspar.ai (Remote position, Silicon Valley Based Company)**
 #### August 2018 to November 2019
-##### Cloud Developer Intern at Caspar.ai (Remote position, Silicon Valley Based Company)
+
 - Built UI features in an admin panel with AngularJS and backend ExpressJS, PostgreSQL and Redis.
 - Converted previous cloud infrastructure to infrastructure as code for Caspar Cloud Services using Terraform, Packer, Vault and AWS.
 
 
+#### **Full stack JavaScript Developer for DecisionFiction (Remote position, New York Based Company)**
 #### February 2018 to November 2018
-##### Full stack JavaScript Developer for DecisionFiction (Remote position, New York Based Company)
 
 - Built Writer's portal using Angular 6.
 - Built NodeJS backend for chatbots in Facebook, Telegram, Kik, Line and WeChat.
 - It is a platform for writers to write stories in Twine and play them in chat bots for various messaging platforms.
 
 
+#### **Full stack JavaScript Developer for Your Local Cousin (Remote position, New York Based Company)**
 #### July 2016 to December 2016
-##### Full stack JavaScript Developer for Your Local Cousin (Remote position, New York Based Company)
 
-Built and Maintained a webapp based on AngularJS, NodeJS, FeathersJS and Firebase Database with Algolia search service, I maintained the application which was hosted on an EC2 instance on AWS and used S3 for static assets.
+- Built and Maintained a webapp based on AngularJS, NodeJS, FeathersJS and Firebase Database with Algolia search service, I maintained the application which was hosted on an EC2 instance on AWS and used S3 for static assets.
 
 
+#### **Full Stack Web Developer for JobNinja (Remote position, New Delhi based Company)**
 #### May 2015 to October 2015
-##### Full Stack Web Developer for JobNinja (Remote position, New Delhi based Company)
 
 It was an online portal for freelancers and employers to find work and hire respectively. I deployed it on AWS and wrote the REST API and also wrote the front end web app in AngularJS. 
 
 
+#### **Hybrid Mobile App Developer for OnlineExams (Kanpur based Company)**
 #### January 2015 to October 2015
-##### Hybrid Mobile App Developer for OnlineExams (Kanpur based Company)
 
 Built a cross platform mobile app for onlinexams.in using Apache Cordova/Phonegap and jQuery Mobile for the UI. OnlinExams is a quiz taking app for coaching institutes and conducting exams, quizzes etc.
 
 
-#### 2014 - Present
+#### **Front end developer intern (Indian Institute of Technology Kanpur)**
+#### May 2014 to August 2015
 
-Successfully completed Summer and Winter Internships at IIT Kanpur in 2014. Working as a Front-End Developer in:
+Completed Summer and Winter Internships at IIT Kanpur in 2014. Working as a Front-End Developer in:
 
 [Mookit](http://mookit.co/), IIT Kanpur's MOOC Platform. It has been used for online courses with worldwide audiences, namely, [Mooc On Mooc](http://mooconmooc.org/) and [Architecture for Cloud](http://arch4cloud.in/), Currently being used for a series of courses on [Agriculture](http://agmoocs.in/). Technologies I worked with: HTML5, CSS3, Foundation, JavaScript, EmberJS and jQuery.
 
