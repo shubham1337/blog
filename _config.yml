@@ -17,3 +17,10 @@ markdown: kramdown
 # Auto Generation of sitemap.xml by GitHub Pages
 gems:
     - jekyll-sitemap
+    
+defaults:
+  -
+    scope:
+      path:            "bower_components"
+    values:
+      sitemap:         false
