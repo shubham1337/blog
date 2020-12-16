@@ -19,7 +19,7 @@ gems:
     - jekyll-sitemap
     
 defaults:
-  - scope:
-      path:            "bower_components/*"
-    values:
-      sitemap:         false
+    - scope:
+        path: "bower_components/*"
+      values:
+        sitemap: false
