@@ -24,7 +24,7 @@ defaults:
         path: "bower_components"
       values:
         sitemap: false
-     - 
+    - 
       scope:
         path: "node_modules"
       values:
