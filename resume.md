@@ -50,14 +50,9 @@ It was an online portal for freelancers and employers to find work and hire resp
 
 
 #### January 2015 to October 2015
-###### Hybrid Mobile App Developer for OnlineExams (Kanpur based Company)
+##### Hybrid Mobile App Developer for OnlineExams (Kanpur based Company)
 
 Built a cross platform mobile app for onlinexams.in using Apache Cordova/Phonegap and jQuery Mobile for the UI. OnlinExams is a quiz taking app for coaching institutes and conducting exams, quizzes etc.
-
-
-#### 2015
-
-This Website. Hosted using [Github Pages](https://pages.github.com/), This is a static website generated using [Jekyll](http://jekyllrb.com/) (A tool to generate static websites using dynamic templates). Technologies I worked with: Jekyll, Git, Github Pages, HTML5, CSS3, SASS, jQuery. Source is available [here](https://github.com/shubham1337/shubham1337.github.io/).
 
 
 #### 2014 - Present
